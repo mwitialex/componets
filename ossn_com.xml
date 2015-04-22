@@ -1,1 +1,10 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<component xmlns="http://www.opensource-socialnetwork.org/v/1.0">
+    <com_name>Serverpages</com_name>
+    <com_author>Alex</com_author>
+    <com_description>Custom component by alex.</com_description>
+    <com_license>GPL V2</com_license>
+    <com_licence_url>http://www.opensource-socialnetwork.org/licence/</com_licence_url>
+    <com_author_url>https://github.com/mwitialex</com_author_url>
+    <com_version>1.0</com_version>
+</component>
