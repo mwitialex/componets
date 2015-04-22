@@ -1,18 +1,13 @@
 <?php
 /**
  *    OpenSource-SocialNetwork
- *
  * 
  * @author    alex
  * @copyright 2015
- * @license   General Public Licence http://opensource-socialnetwork.com/licence
- * @link      http://www.opensource-socialnetwork.com/licence
+ * @license   General Public Licence http://opensource-socialnetwork.org/licence
+ * @link      https://www.opensource-socialnetwork.org/
  */
-
-
-
-
-function ossn_tv_init() {
+function severload_init() {
 	ossn_register_page('severload', 'severpages');
 	  if (ossn_isLoggedin()) {       
 		
@@ -26,16 +21,16 @@ function ossn_tv_init() {
     }
 }
 
-
-function ossn_tv_pages($pages) {
-
- if (!ossn_isLoggedin()) {
+//page handler for serverpages component
+function severpages($pages) {
+  if (!ossn_isLoggedin()) {
             ossn_error_page();
    }
-$title = ossn_print('com:ossn:severload');
-   $contents['content'] = ossn_view('components/tv/pages/severload');
+   $title = ossn_print('com:ossn:severload');
+   //give a exact path to file <components/serverpages/pages/serverload>
+   $contents['content'] = ossn_view('components/serverpages/pages/severload');
    $content = ossn_set_page_layout('contents', $contents);
    echo ossn_view_page($title, $content);
 }
-
-ossn_register_callback('ossn', 'init', 'severload');
+//initilize serverload component
+ossn_register_callback('ossn', 'init', 'severload_init');
