@@ -9,7 +9,7 @@
  * @link      http://www.opensource-socialnetwork.org/licence
  */
 $en = array(
-	'com:ossn:frofilebar' => 'profilebar',			
+	'com:ossn:severload' => 'severload',			
 	
 );
 ossn_register_languages('en', $en); 
