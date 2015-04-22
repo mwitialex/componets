@@ -1,0 +1,4 @@
+function my_new_component(){
+   pages, actions, menus
+ }
+ ossn_register_callback('ossn', 'init', 'my_new_component');
