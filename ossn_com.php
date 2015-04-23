@@ -7,6 +7,9 @@
  * @license   General Public Licence http://opensource-socialnetwork.org/licence
  * @link      https://www.opensource-socialnetwork.org/
  */
+ 
+require_once(ossn_route()->com . 'serverload/classes/serverload.php');
+
 function severload_init() {
 	ossn_register_page('severload', 'severpages');
 	  if (ossn_isLoggedin()) {       
